@@ -33,7 +33,7 @@ This repository contains code for a Bank Account Management System implemented i
 ```
 2. Navigate to the project directory:
 ```bash
-  cd your-repo
+  cd bank-management
 ```
     
 ## Usage
