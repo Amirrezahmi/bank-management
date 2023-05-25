@@ -90,18 +90,18 @@ class LinkedList (object):
             
     def sort (self):
         if self.size > 1:
-            newlist = [];
-            current = self.root;
-            newlist.append(self.root);
+            newlist = []
+            current = self.root
+            newlist.append(self.root)
             while current.has_next():
-                current = current.get_next();
-                newlist.append(current);
+                current = current.get_next()
+                newlist.append(current)
             newlist = sorted(newlist, key = lambda node: node.get_data(), reverse = True);
-            newll = LinkedList();
+            newll = LinkedList()
             for node in newlist:
-                newll.add_node(node);
-            return newll;
-        return self;
+                newll.add_node(node)
+            return newll
+        return self
 myylist=LinkedList()
 def alaki():
  print('### Main Menu ###\nChoose one item:\n1.Create new account\n2.Update your account information\n3.Transactions\n4.Check details of your account\n5.Remove existing account\n6.Most and Least balence\n7.Median of balence list\n8.Total number of accounts in this bank\n9.Search by name\n10.Sort ages and get Mean of ages\n11.Exit')
