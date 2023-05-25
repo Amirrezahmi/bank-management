@@ -92,6 +92,12 @@ main_menu()
 
 ```
 
+# Screenshot
+Here's a screenshot of a sample example:
+
+![bank](https://github.com/Amirrezahmi/bank-management/assets/89692207/f9fa01d4-6c09-498d-9e97-0153daef9328)
+
+
 # Contributing
 
 Contributions are welcome! If you find any issues or have suggestions for improvement, please open an issue or submit a pull request.
