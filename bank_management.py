@@ -259,7 +259,7 @@ while a!=11:
   no=a1[2]
 #   print(f'Your full id is: {noo}\nBut you have only use: {no}\nSo your account id is: {no}')
           
-  password=input('password(At least 4 letters or numbers): ')
+  password=input('Enter a password (It should be at least 4 letters or numbers):\t ')
   if len(password)<4:
       while len(password)<4:
           print('Warning: At least you should use 4 charecters or digits for password')
@@ -269,7 +269,7 @@ while a!=11:
       xx=money
       xx=int(xx)
   except ValueError:
-      print('Warning! it should be only digits.')
+      print('Warning! It should be only digits.')
       while True:
           money=input('Enter your account balance: ')
           try:
