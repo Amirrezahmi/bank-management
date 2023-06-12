@@ -340,9 +340,9 @@ while a!=11:
      else:
          print('Wrong password!')
     else:
-        print('Unknown ID.')
+        print('Unknown ID!')
   except TypeError:
-      print('No account founded.\nPress 1 to create an account')
+      print('No account founded.\nPress 1 to create an account.')
  elif a== 3:
   try:
    if len(myList.print_list())!=0:
@@ -399,7 +399,7 @@ while a!=11:
         else:
             print('Unknown ID.')
   except TypeError:
-      print('No account founded.\nPress 1 to create an account')
+      print('No account founded.\nPress 1 to create an account.')
 
   
  elif a==5:
@@ -425,7 +425,7 @@ while a!=11:
                    print('Not found.')
                    break
     except TypeError:
-        print('No account founded.\nPress 1 to create an account')
+        print('No account founded.\nPress 1 to create an account.')
                  
 
  elif a ==6:
@@ -438,7 +438,7 @@ while a!=11:
 
 
      except TypeError:
-         print('You need at least 2 account for this part.\nPress 1 to create an account')
+         print('You need at least 2 account for this part.\nPress 1 to create an account.')
  elif a ==7:
      n = myylist.print_list()
      try:
@@ -454,7 +454,7 @@ while a!=11:
 
 
      except TypeError:
-         print('No account founded.\nPress 1 to create an account')
+         print('No account founded.\nPress 1 to create an account.')
  elif a ==8:
      print('Total number of accounts: ',myList.get_size())
  elif a == 9:
@@ -473,7 +473,7 @@ while a!=11:
              else:
                  print(f'{vk} dose not have an account in this bank.')
      except TypeError:
-         print('No account founded.\nPress 1 to create an account')
+         print('No account founded.\nPress 1 to create an account.')
  elif a==10:
      try:
          if len(myList.print_list())!=0:
@@ -487,6 +487,6 @@ while a!=11:
              mean=sum/len(g)
              print(f'Mean is : {mean}')
      except TypeError:
-         print('No account founded.\nPress 1 to create an account')
+         print('No account founded.\nPress 1 to create an account.')
  alaki()
  a=int(input('Operation Number: '))
