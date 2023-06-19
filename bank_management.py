@@ -90,22 +90,22 @@ class LinkedList (object):
             
     def sort (self):
         if self.size > 1:
-            newlist = []
-            current = self.root
-            newlist.append(self.root)
+            newlist = [];
+            current = self.root;
+            newlist.append(self.root);
             while current.has_next():
-                current = current.get_next()
-                newlist.append(current)
+                current = current.get_next();
+                newlist.append(current);
             newlist = sorted(newlist, key = lambda node: node.get_data(), reverse = True);
-            newll = LinkedList()
+            newll = LinkedList();
             for node in newlist:
-                newll.add_node(node)
-            return newll
-        return self
+                newll.add_node(node);
+            return newll;
+        return self;
 myylist=LinkedList()
 def alaki():
  print('### Main Menu ###\nChoose one item:\n1.Create new account\n2.Update your account information\n3.Transactions\n4.Check details of your account\n5.Remove existing account\n6.Most and Least balence\n7.Median of balence list\n8.Total number of accounts in this bank\n9.Search by name\n10.Sort ages and get Mean of ages\n11.Exit')
-print('WELCOME TO OUR BANK MANAGEMENT SYSTEM')
+print('WELCOME TO GROUP 3 BANK MANAGEMENT')
  
 myList=LinkedList()
 alaki()
@@ -259,7 +259,7 @@ while a!=11:
   no=a1[2]
 #   print(f'Your full id is: {noo}\nBut you have only use: {no}\nSo your account id is: {no}')
           
-  password=input('Enter a password (It should be at least 4 letters or numbers):\t ')
+  password=input('password(At least 4 letters or numbers): ')
   if len(password)<4:
       while len(password)<4:
           print('Warning: At least you should use 4 charecters or digits for password')
@@ -269,7 +269,7 @@ while a!=11:
       xx=money
       xx=int(xx)
   except ValueError:
-      print('Warning! It should be only digits.')
+      print('Warning! it should be only digits.')
       while True:
           money=input('Enter your account balance: ')
           try:
@@ -340,9 +340,9 @@ while a!=11:
      else:
          print('Wrong password!')
     else:
-        print('Unknown ID!')
+        print('Unknown ID.')
   except TypeError:
-      print('No account founded.\nPress 1 to create an account.')
+      print('No account founded.\nPress 1 to create an account')
  elif a== 3:
   try:
    if len(myList.print_list())!=0:
@@ -399,7 +399,7 @@ while a!=11:
         else:
             print('Unknown ID.')
   except TypeError:
-      print('No account founded.\nPress 1 to create an account.')
+      print('No account founded.\nPress 1 to create an account')
 
   
  elif a==5:
@@ -425,7 +425,7 @@ while a!=11:
                    print('Not found.')
                    break
     except TypeError:
-        print('No account founded.\nPress 1 to create an account.')
+        print('No account founded.\nPress 1 to create an account')
                  
 
  elif a ==6:
@@ -438,7 +438,7 @@ while a!=11:
 
 
      except TypeError:
-         print('You need at least 2 account for this part.\nPress 1 to create an account.')
+         print('You need at least 2 account for this part.\nPress 1 to create an account')
  elif a ==7:
      n = myylist.print_list()
      try:
@@ -454,7 +454,7 @@ while a!=11:
 
 
      except TypeError:
-         print('No account founded.\nPress 1 to create an account.')
+         print('No account founded.\nPress 1 to create an account')
  elif a ==8:
      print('Total number of accounts: ',myList.get_size())
  elif a == 9:
@@ -473,7 +473,7 @@ while a!=11:
              else:
                  print(f'{vk} dose not have an account in this bank.')
      except TypeError:
-         print('No account founded.\nPress 1 to create an account.')
+         print('No account founded.\nPress 1 to create an account')
  elif a==10:
      try:
          if len(myList.print_list())!=0:
@@ -487,6 +487,6 @@ while a!=11:
              mean=sum/len(g)
              print(f'Mean is : {mean}')
      except TypeError:
-         print('No account founded.\nPress 1 to create an account.')
+         print('No account founded.\nPress 1 to create an account')
  alaki()
  a=int(input('Operation Number: '))
